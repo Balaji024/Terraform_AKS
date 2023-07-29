@@ -43,7 +43,7 @@ module "keyvault" {
   ]
 }
 resource "azurerm_role_assignment" "akv_sp" {
-  scope                = azurerm_key_vault.kv.id
+  scope                = module.keyvault.keyvault_id
   role_definition_name = "Key Vault Administrator"
   principal_id         = module.ServicePrincipal.service_principal_object_id
 depends_on = [
