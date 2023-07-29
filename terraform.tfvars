@@ -1,4 +1,4 @@
 rgname                 = "aks-poc-learning"
-location               = "centralus"
+location               = "canadacentral"
 service_principal_name = "aksspn"
 keyvault_name          = "test-kv-101"
