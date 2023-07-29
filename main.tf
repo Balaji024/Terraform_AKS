@@ -42,7 +42,14 @@ module "keyvault" {
     module.ServicePrincipal
   ]
 }
-
+resource "azurerm_role_assignment" "akv_sp" {
+  scope                = azurerm_key_vault.kv.id
+  role_definition_name = "Key Vault Administrator"
+  principal_id         = module.ServicePrincipal.service_principal_object_id
+depends_on = [
+    module.ServicePrincipal
+  ]
+}
 resource "azurerm_key_vault_secret" "example" {
   name         = module.ServicePrincipal.client_id
   value        = module.ServicePrincipal.client_secret
