@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "AKSres"
-    storage_account_name = "stroge23"
+    resource_group_name  = "aks-poc"
+    storage_account_name = "akspoclearning"
     container_name       = "tfstate"
     key                  = "prod.terraform.tfstate"
   }
