@@ -4,9 +4,8 @@ features {
   }
 }
 
-resource "azurerm_resource_group" "rg1" {
-  name     = var.rgname
-  location = var.location
+module "ServicePrincipal" {
+  source                 = "./modules/ResourceGroup"
 }
 
 module "ServicePrincipal" {
