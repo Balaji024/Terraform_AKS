@@ -4,7 +4,7 @@ features {
   }
 }
 
-module "ServicePrincipal" {
+module "ResourceGroup" {
   source                 = "./modules/ResourceGroup"
 }
 
