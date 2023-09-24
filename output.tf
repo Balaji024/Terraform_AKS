@@ -1,5 +1,5 @@
 output "resource_group_name" {
-  value = azurerm_resource_group.rg1.name
+  value = module.azurerm_resource_group.rg1.name
 }
 
 output "client_id" {
