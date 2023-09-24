@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "rg1" {
-  name     = "aks-poc"
-  location = "centralus"
+  name     = var.rgname
+  location = var.location
 }
