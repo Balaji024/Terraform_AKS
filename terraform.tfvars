@@ -1,4 +1,5 @@
-rgname                 = "aks-poc-learning"
-location               = "canadacentral"
+rgname                 = "aks-poc"
+location               = "centralus"
 service_principal_name = "aksspn"
 keyvault_name          = "test-kv-101"
+subscription_id        = "/subscriptions/b65730da-afce-4e1e-b12e-5ad9cce9ee35"
