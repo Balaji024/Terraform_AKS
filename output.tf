@@ -1,5 +1,5 @@
 output "resource_group_name" {
-  value = module.ResourceGroup.name
+  value = module.ResourceGroup
 }
 
 output "client_id" {
