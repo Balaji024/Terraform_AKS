@@ -14,7 +14,7 @@ module "ServicePrincipal" {
   service_principal_name = var.service_principal_name
 
   depends_on = [
-    module.azurerm_resource_group
+    module.ResourceGroup
   ]
 }
 
