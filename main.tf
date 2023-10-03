@@ -7,6 +7,8 @@ features {
 
 module "ResourceGroup" {
   source                 = "./modules/ResourceGroup"
+  rgname                 = var.rgname
+  location               = var.location
 }
 
 module "ServicePrincipal" {
