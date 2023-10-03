@@ -7,7 +7,7 @@ features {
 
 module "ResourceGroup" {
   source                 = "./modules/ResourceGroup"
-  rgname                 = var.rgname
+  resource_group_name    = var.rgname
   location               = var.location
 }
 
