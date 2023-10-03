@@ -16,3 +16,8 @@ variable "service_principal_name" {
 variable "keyvault_name" {
   type = string
 }
+
+variable "subscription_id" {
+  type = string
+}
+
